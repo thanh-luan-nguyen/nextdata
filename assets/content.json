@@ -1,0 +1,152 @@
+{
+    "jp": {
+        "Header": {
+            "about": "企業情報",
+            "service": "事業案内",
+            "product": "製品紹介",
+            "recruit": "採用情報",
+            "contact": "お問い合わせ",
+            "language": "日本語"
+        },
+        "Body": {
+            "Home": {
+                "about": {
+                    "title": "私たちの仕事",
+                    "text": "私たちは、究極の証明書を作ることを目指しています。"
+                },
+                "gallery": {
+                    "title": "開発サービス",
+                    "service": "事業案内",
+                    "results": "開発実績"
+                },
+                "product": {
+                    "title": "製品紹介",
+                    "nextshop": "初めての開業でも簡単に導入できる、販売管理システム。",
+                    "nextcloud": "クラウド化されたバックオフィスで、生産性の向上とコストの削減を実現します。"
+                },
+                "service": {
+                    "title": "IT人材の育成",
+                    "shanghai_new_graduates": {
+                        "title": "中国の新卒採用",
+                        "text": "中国において、ITと日本語スクールを繋ぎ、人材を集めトレーニングを行います。",
+                        "text2": "一定期間のトレーニングを終了した応募者の中より、優秀な日本語習得者とIT人材を確保して採用します。"
+                    },
+                    "technical_seminar": {
+                        "title": "最新技術セミナー",
+                        "text": "弊社社員に限らず、各社パートナー企業を含め人材育成が可能となるよう、協業パートナーの紹介による受講者も広く受け入れます。"
+                    }
+                }
+            }
+        },
+        "Footer": {
+            "about": "企業情報",
+            "service": "事業案内",
+            "product": "製品紹介",
+            "recruit": "採用情報",
+            "contact": "お問い合わせ",
+            "privacy": "個人情報保護方針",
+            "quality": "品質方針",
+            "sitemap": "サイトマップ"
+        }
+    },
+    "cn": {
+        "Header": {
+            "about": "企业信息",
+            "service": "事业内容",
+            "product": "产品介绍",
+            "recruit": "招聘信息",
+            "contact": "联络我们",
+            "language": "简体中文"
+        },
+        "Body": {
+            "Home": {
+                "about": {
+                    "title": "我们的工作",
+                    "text": "我们的目标是通过信息技术提高运营效率，成为对社会有贡献的公司。"
+                },
+                "gallery": {
+                    "title": "系统开发",
+                    "service": "事业内容",
+                    "results": "开发案例"
+                },
+                "product": {
+                    "title": "产品介绍",
+                    "nextshop": "即使初次开店也可以轻松上手。",
+                    "nextcloud": "通过NEXTCLOUD技术，您可以提高工作效率并降低运营成本。"
+                },
+                "service": {
+                    "title": "IT人才培育",
+                    "shanghai_new_graduates": {
+                        "title": "中国应届毕业生招聘",
+                        "text": "与中国大学院校合作，集合优秀软件开发人才进行培训。从经培训后的应聘者中择优录用。",
+                        "text2": ""
+                    },
+                    "technical_seminar": {
+                        "title": "最新技术研讨会",
+                        "text": "为更好地进行人才培育，除本社社员之外，我们也广泛接纳各合作企业及同行介绍的培训者。"
+                    }
+                }
+            }
+        },
+        "Footer": {
+            "about": "企业信息",
+            "service": "事业内容",
+            "product": "产品介绍",
+            "recruit": "招聘信息",
+            "contact": "联络我们",
+            "privacy": "个人信息保护方针",
+            "quality": "品質方針(U/A)",
+            "sitemap": "网站地图"
+        }
+    },
+    "tw": {
+        "Header": {
+            "about": "公司資訊",
+            "service": "事業內容",
+            "product": "產品介紹",
+            "recruit": "招募資訊",
+            "contact": "聯絡我們",
+            "language": "繁體中文"
+        },
+        "Body": {
+            "Home": {
+                "about": {
+                    "title": "我們的工作",
+                    "text": "我們的目標是通過資訊技術提高運營效率，成為對社會有貢獻的公司。"
+                },
+                "gallery": {
+                    "title": "系統開發",
+                    "service": "事業內容",
+                    "results": "開發案例"
+                },
+                "product": {
+                    "title": "產品介紹",
+                    "nextshop": "新手開店也能輕鬆上手的商店管理系統。",
+                    "nextcloud": "透過NEXTCLOUD技術，您可以提高工作效率並降低營運成本。"
+                },
+                "service": {
+                    "title": "IT人才培育",
+                    "shanghai_new_graduates": {
+                        "title": "中國應屆畢業生招募",
+                        "text": "與中國大學院校合作，集合優秀的人才進行培訓。從經培訓後的應聘者中擇優錄用。",
+                        "text2": ""
+                    },
+                    "technical_seminar": {
+                        "title": "最新技術研討會",
+                        "text": "為更好地進行人才培育，除本社社員之外，我們也廣泛接納各合作企業及同行介紹的培訓者。"
+                    }
+                }
+            }
+        },
+        "Footer": {
+            "about": "公司資訊",
+            "service": "事業內容",
+            "product": "產品介紹",
+            "recruit": "招募資訊",
+            "contact": "聯絡我們",
+            "privacy": "個人資訊保護政策",
+            "quality": "品質方針(U/A)",
+            "sitemap": "網站導覽"
+        }
+    }
+}
