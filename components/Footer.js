@@ -37,7 +37,7 @@ function Footer() {
             (item, index) => (
               <div
                 key={index}
-                className='relative h-full w-[7rem] inline-block border'
+                className='relative h-full w-[7rem] inline-block'
               >
                 <Image
                   src={`/footer/${item}.png`}
