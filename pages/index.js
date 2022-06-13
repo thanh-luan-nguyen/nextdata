@@ -3,7 +3,6 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 import content from '../assets/content.json'
 import LayoutContainer from '../components/LayoutContainer'
-import ReadMoreButton from '../components/ReadMoreButton'
 
 export default function Home() {
   const { locale } = useRouter()
@@ -53,7 +52,13 @@ export default function Home() {
                 </h2>
                 <h3 className='text-nextdata-font-grey mb-[2rem]'>ABOUT US</h3>
                 <p className='mb-[2.5rem]'>{extractedContent.about.text}</p>
-                <ReadMoreButton height='5rem' width='23rem' href='/about' />
+                <div
+                  className={`text-white hover:text-nextdata-font-button bg-nextdata-font-button hover:bg-white transition duration-500 mx-auto grid items-center cursor-pointer border border-nextdata-font-button h-[4rem] max-w-[20rem] w-[80%]`}
+                >
+                  <Link href='/about'>
+                    <a className=''>READ MORE</a>
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
@@ -118,21 +123,27 @@ export default function Home() {
                   href: 'product/next_cloud'
                 }
               ].map((item, index) => (
-                <div key={index} className='w-[21rem]'>
+                <div key={index} className='w-full max-w-[21rem]'>
                   <img
                     className='w-[80%] md:w-auto md:h-24 mx-auto mb-7'
                     src={`/next-product/${item.alt}.png`}
                     alt={item.alt}
                   />
-                  <p className='h-16 mb-7'>{item.content}</p>
-                  <ReadMoreButton height='4rem' width='100%' href={item.href} />
+                  <p className='h-16 mb-7 w-full'>{item.content}</p>
+                  <div
+                    className={`text-white hover:text-nextdata-font-button bg-nextdata-font-button hover:bg-white transition duration-500 mx-auto grid items-center cursor-pointer border border-nextdata-font-button h-[4rem] max-w-[20rem] w-[80%]`}
+                  >
+                    <Link href={item.href}>
+                      <a className=''>READ MORE</a>
+                    </Link>
+                  </div>
                 </div>
               ))}
             </div>
           </div>
 
           {/* service */}
-          <div className=''>
+          <div className='pb-10'>
             <div className='mb-28 lg:relative h-[28rem]'>
               <div
                 className='py-16 text-center text-white lg:absolute lg:w-[70%] lg:h-full lg:pt-[11rem] lg:text-left lg:pl-[15%] '
@@ -179,6 +190,7 @@ export default function Home() {
           </div>
         </main>
 
+        {/* contact */}
         <div
           className='py-32 text-center px-5'
           style={{ backgroundImage: 'url(/home/contact-02.0x0.cutting.jpg)' }}
@@ -187,8 +199,7 @@ export default function Home() {
             ご相談・ご質問等ございましたら、お気軽にお問い合わせください。
           </h3>
           <div
-            className={`text-white hover:bg-nextdata-font-button transition duration-500 mx-auto grid items-center cursor-pointer border-2 border-white hover:border-nextdata-font-button`}
-            style={{ height: '4rem', width: '20rem' }}
+            className={`text-white hover:bg-nextdata-font-button transition duration-500 mx-auto grid items-center cursor-pointer border-2 border-white hover:border-nextdata-font-button h-[4rem] max-w-[20rem] w-[80%]`}
           >
             <Link href='/contact'>
               <a className=''>お問い合わせはこちら</a>
