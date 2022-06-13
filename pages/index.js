@@ -18,6 +18,9 @@ export default function Home() {
               className='w-full text-center text-nextdata-font-white text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl absolute top-1/2 -translate-y-1/2 font-[900]'
               style={{ textShadow: '5px 5px 5px #333' }}
             >
+              {/* whitespace space character code: 
+              
+              */}
               ［　株式会社ネクストデータ　］
             </div>
             <img
@@ -143,69 +146,67 @@ export default function Home() {
           </div>
 
           {/* service */}
-          <div className='pb-10'>
-            <div className='mb-28 lg:relative h-[28rem]'>
-              <div
-                className='py-16 text-center text-white lg:absolute lg:w-[70%] lg:h-full lg:pt-[11rem] lg:text-left lg:pl-[15%] '
-                style={{
-                  backgroundImage: 'url(/home/left-03.0x0.cutting.jpg)',
-                  backgroundSize: 'cover',
-                  backgroundPosition: '0 40%'
-                }}
-              >
-                <h2 className='text-3xl mb-5'>
-                  {extractedContent.service.title}
-                </h2>
-                <span className='lg:text-lg'>TALENTS CULTIVATION</span>
-              </div>
-              <ul
-                className='lg:absolute lg:w-full lg:h-full lg:flex lg:justify-end lg:items-end lg:flex-col'
-                style={{ paddingRight: 'calc((100vw - 1200px)/2)' }}
-              >
-                {['shanghai_new_graduates', 'technical_seminar'].map(
-                  (item, index) => (
-                    <li
-                      key={index}
-                      className='cursor-pointer pt-8 pb-9 px-8 border lg:w-[35rem] bg-white hover:bg-nextdata-bg-hover-grey transition duration-400'
-                    >
-                      <a href={`/service/${item}`}>
-                        <h3 className='text-nextdata-font-blue font-semibold mb-2'>
-                          {extractedContent.service[item].title}
-                        </h3>
-                        <div className='text-nextdata-font-grey'>
-                          {extractedContent.service[item].text}
-                          {locale === 'jp' && (
-                            <>
-                              <br />
-                              <>{extractedContent.service[item].text2}</>
-                            </>
-                          )}
-                        </div>
-                      </a>
-                    </li>
-                  )
-                )}
-              </ul>
+          <div className='mb-16 lg:mb-28 lg:relative h-fit lg:h-[28rem]'>
+            <div
+              className='py-16 text-center text-white lg:absolute lg:w-[70%] lg:h-full lg:pt-[11rem] lg:text-left lg:pl-[15%] '
+              style={{
+                backgroundImage: 'url(/home/left-03.0x0.cutting.jpg)',
+                backgroundSize: 'cover',
+                backgroundPosition: '0 40%'
+              }}
+            >
+              <h2 className='text-3xl mb-5'>
+                {extractedContent.service.title}
+              </h2>
+              <span className='lg:text-lg'>TALENTS CULTIVATION</span>
+            </div>
+            <ul
+              className='lg:absolute lg:w-full lg:h-full lg:flex lg:justify-end lg:items-end lg:flex-col'
+              style={{ paddingRight: 'calc((100vw - 1200px)/2)' }}
+            >
+              {['shanghai_new_graduates', 'technical_seminar'].map(
+                (item, index) => (
+                  <li
+                    key={index}
+                    className='cursor-pointer pt-8 pb-9 px-8 border lg:w-[35rem] bg-white hover:bg-nextdata-bg-hover-grey transition duration-400'
+                  >
+                    <a href={`/service/${item}`}>
+                      <h3 className='text-nextdata-font-blue font-semibold mb-2'>
+                        {extractedContent.service[item].title}
+                      </h3>
+                      <div className='text-nextdata-font-grey'>
+                        {extractedContent.service[item].text}
+                        {locale === 'jp' && (
+                          <>
+                            <br />
+                            <>{extractedContent.service[item].text2}</>
+                          </>
+                        )}
+                      </div>
+                    </a>
+                  </li>
+                )
+              )}
+            </ul>
+          </div>
+
+          {/* contact */}
+          <div
+            className='py-32 text-center px-5'
+            style={{ backgroundImage: 'url(/home/contact-02.0x0.cutting.jpg)' }}
+          >
+            <h3 className='text-white mb-10 text-2xl'>
+              {extractedContent.contact.text}
+            </h3>
+            <div
+              className={`text-white hover:bg-nextdata-font-button transition duration-500 mx-auto grid items-center cursor-pointer border-2 border-white hover:border-nextdata-font-button h-[4rem] max-w-[20rem] w-[80%]`}
+            >
+              <Link href='/contact'>
+                <a className=''>{extractedContent.contact.button}</a>
+              </Link>
             </div>
           </div>
         </main>
-
-        {/* contact */}
-        <div
-          className='py-32 text-center px-5'
-          style={{ backgroundImage: 'url(/home/contact-02.0x0.cutting.jpg)' }}
-        >
-          <h3 className='text-white mb-10 text-2xl'>
-            ご相談・ご質問等ございましたら、お気軽にお問い合わせください。
-          </h3>
-          <div
-            className={`text-white hover:bg-nextdata-font-button transition duration-500 mx-auto grid items-center cursor-pointer border-2 border-white hover:border-nextdata-font-button h-[4rem] max-w-[20rem] w-[80%]`}
-          >
-            <Link href='/contact'>
-              <a className=''>お問い合わせはこちら</a>
-            </Link>
-          </div>
-        </div>
       </>
     </LayoutContainer>
   )
